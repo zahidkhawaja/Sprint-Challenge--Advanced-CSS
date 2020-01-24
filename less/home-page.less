@@ -19,11 +19,24 @@
     flex-wrap: wrap;
     width: 100%;
 
+    @media @phone {
+      justify-content: center;
+    }
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .sky, .launch {
+        display: none;
+      }
+      .blast {
+        width: 90%;
+      }
     }
   }
 

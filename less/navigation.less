@@ -13,10 +13,6 @@ a {
     color: black;
 }
 
-.main-header {
-    text-align: center;
-}
-
 .linkscontainer {
     .center();
 }
@@ -26,9 +22,22 @@ a {
     width: 50%;
     justify-content: space-between;
     margin-bottom: 10px;
+
+    @media @phone {
+        width: 75%;
+    }
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;  
 }
 
 .main-header img {
     border-radius: 5px;
+    width: 100%;
 }
 
