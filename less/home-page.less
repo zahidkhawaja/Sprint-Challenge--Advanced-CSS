@@ -17,7 +17,7 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    .width();
 
     @media @phone {
       justify-content: center;
@@ -68,7 +68,7 @@
       width: 50%;
 
       @media @phone {
-        width: 100%;
+        .width();
       }
 
       h3 {
@@ -82,7 +82,7 @@
       .btn {
         .signup-btn();
         @media @phone {
-          width: 100%;
+          .width();
           height: 65px;
         }
       }
@@ -93,13 +93,13 @@
       margin-left: 4%;
 
       @media @phone {
-        width: 100%;
+        .width();
         margin-left: 0;
         margin-bottom: 20px;
       }
       
       img {
-        width: 100%;
+        .width();
         height: auto;
         border-radius: 10px;
       }

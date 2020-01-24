@@ -239,6 +239,9 @@ a {
   border-radius: 5px;
   width: 100%;
 }
+.nav {
+  background-color: #F6F6F6;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
