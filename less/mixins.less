@@ -1,1 +1,33 @@
 // Mixins Here
+
+
+//Centering mixin
+.center() {
+    display: flex;
+    justify-content: center;
+}
+
+.width() {
+    width: 100%;
+}
+
+
+
+//This mixin contains all the "sign up" button properties
+.signup-btn(@bg-color: #22283A, @width:100px, @font-color:white){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 35px;
+    font-size: 1.78rem;
+    border-radius: 5px;
+    color:@font-color;
+
+    &:hover {
+        background-color: lighten(@bg-color, 87.5%);
+        color: black;
+    }
+}
